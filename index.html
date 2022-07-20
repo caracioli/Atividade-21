@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=  , initial-scale=1.0">
+    <meta name="author" content="Henrique Caracioli" />
+    <title>Página Comentário</title>
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Página de comentários</h1>
+        </div>
+        <hr />
+    </header>
+    <main>
+        <div class="container">
+            <form onsubmit="return false;">
+                <label>Nome:</label><br />
+                <input type="text" id="nome" placeholder="Nome do usuário" class="ipt-altura largura-maxima" /> <br /> <br />
+                <label>Comentá  rio</label><br />
+                <textarea id="comentario" placeholder="Digite aqui seu comentário" class="comentario largura-maxima"></textarea><br /><br />
+                <label>Formatação:</label><br />
+                <label>Cor do texto:</label>
+                <input type="color" id="cor-texto" />
+                <label>Cor de fundo:</label>
+                <input type="color" id="cor-fundo" value="#ffffff" />
+                <br /><br />
+                <button class="ipt-altura" onclick="postarComentario();">Enviar</button>
+            </form><br />
+            <hr /><br /><br />
+            <div id="comentarios"></div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
